@@ -1,65 +1,64 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const FEATURES = [
+  {
+    title: "See it running in 3D",
+    body: "Your parts appear in a live 3D case as you pick them — hit power and watch the fans spin and the RGB glow before you spend a dollar.",
+  },
+  {
+    title: "Compatibility checked",
+    body: "Sockets, RAM type, PSU wattage, GPU clearance and cooler height are validated on every pick, so nothing arrives that doesn't fit.",
+  },
+  {
+    title: "Builds that fit your budget",
+    body: "Set a budget and a goal — gaming, productivity or all-round — and get a complete compatible build in one click.",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <main className="mx-auto max-w-5xl px-6 py-24">
+      <section className="text-center">
+        <h1 className="text-4xl font-bold leading-tight sm:text-5xl">
+          Build it. <span className="text-sky-400">See it run.</span>
+          <br />
+          Before you buy.
+        </h1>
+        <p className="mx-auto mt-5 max-w-2xl text-lg text-slate-400">
+          Pick compatible parts like on any part picker — then watch your exact
+          build come to life in 3D with spinning fans and RGB lighting.
+        </p>
+        <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link
+            href="/builder"
+            className="rounded-lg bg-sky-500 px-7 py-3 font-medium text-white transition-colors hover:bg-sky-400"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Start Building
+          </Link>
+          <Link
+            href="/budget"
+            className="rounded-lg border border-slate-700 px-7 py-3 font-medium transition-colors hover:bg-slate-900"
           >
-            Documentation
-          </a>
+            Get a Budget Build
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="mt-24 grid gap-6 sm:grid-cols-3">
+        {FEATURES.map((f) => (
+          <div
+            key={f.title}
+            className="rounded-xl border border-slate-800 bg-slate-900/60 p-6"
+          >
+            <h2 className="font-semibold">{f.title}</h2>
+            <p className="mt-2 text-sm leading-relaxed text-slate-400">{f.body}</p>
+          </div>
+        ))}
+      </section>
+
+      <p className="mt-16 text-center text-sm text-slate-500">
+        Coming soon: live prices and local deals from retailer APIs.
+      </p>
+    </main>
   );
 }

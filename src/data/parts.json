@@ -1,0 +1,56 @@
+[
+  { "id": "cpu-14100f", "category": "cpu", "name": "Core i3-14100F", "brand": "Intel", "price": 100, "tier": 1, "specs": { "socket": "LGA1700", "cores": 4, "boostClockGHz": 4.7, "tdpW": 58, "integratedGraphics": false } },
+  { "id": "cpu-7600", "category": "cpu", "name": "Ryzen 5 7600", "brand": "AMD", "price": 180, "tier": 2, "specs": { "socket": "AM5", "cores": 6, "boostClockGHz": 5.1, "tdpW": 65, "integratedGraphics": true } },
+  { "id": "cpu-14600k", "category": "cpu", "name": "Core i5-14600K", "brand": "Intel", "price": 240, "tier": 3, "specs": { "socket": "LGA1700", "cores": 14, "boostClockGHz": 5.3, "tdpW": 125, "integratedGraphics": true } },
+  { "id": "cpu-7800x3d", "category": "cpu", "name": "Ryzen 7 7800X3D", "brand": "AMD", "price": 340, "tier": 4, "specs": { "socket": "AM5", "cores": 8, "boostClockGHz": 5.0, "tdpW": 120, "integratedGraphics": true } },
+  { "id": "cpu-265k", "category": "cpu", "name": "Core Ultra 7 265K", "brand": "Intel", "price": 350, "tier": 4, "specs": { "socket": "LGA1851", "cores": 20, "boostClockGHz": 5.5, "tdpW": 125, "integratedGraphics": true } },
+  { "id": "cpu-9800x3d", "category": "cpu", "name": "Ryzen 7 9800X3D", "brand": "AMD", "price": 450, "tier": 5, "specs": { "socket": "AM5", "cores": 8, "boostClockGHz": 5.2, "tdpW": 120, "integratedGraphics": true } },
+
+  { "id": "cooler-hyper212", "category": "cooler", "name": "Hyper 212 Black", "brand": "Cooler Master", "price": 30, "tier": 1, "specs": { "sockets": ["AM5", "AM4", "LGA1700"], "type": "air", "heightMm": 152, "fanCount": 1 } },
+  { "id": "cooler-pa120", "category": "cooler", "name": "Peerless Assassin 120 SE", "brand": "Thermalright", "price": 40, "tier": 2, "specs": { "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"], "type": "air", "heightMm": 155, "fanCount": 2 } },
+  { "id": "cooler-lf3-240", "category": "cooler", "name": "Liquid Freezer III 240", "brand": "Arctic", "price": 95, "tier": 3, "specs": { "sockets": ["AM5", "LGA1700", "LGA1851"], "type": "aio", "heightMm": 55, "radiatorMm": 240, "fanCount": 2 } },
+  { "id": "cooler-nhd15", "category": "cooler", "name": "NH-D15 chromax.black", "brand": "Noctua", "price": 120, "tier": 4, "specs": { "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"], "type": "air", "heightMm": 165, "fanCount": 2 } },
+  { "id": "cooler-kraken360", "category": "cooler", "name": "Kraken Elite 360 RGB", "brand": "NZXT", "price": 190, "tier": 5, "specs": { "sockets": ["AM5", "AM4", "LGA1700", "LGA1851"], "type": "aio", "heightMm": 55, "radiatorMm": 360, "fanCount": 3 } },
+
+  { "id": "mobo-b760m-d4", "category": "motherboard", "name": "PRO B760M-A WiFi DDR4", "brand": "MSI", "price": 130, "tier": 1, "specs": { "socket": "LGA1700", "formFactor": "mATX", "ramType": "DDR4", "ramSlots": 4, "maxRamGb": 128 } },
+  { "id": "mobo-a620m", "category": "motherboard", "name": "A620M Gaming X", "brand": "Gigabyte", "price": 110, "tier": 1, "specs": { "socket": "AM5", "formFactor": "mATX", "ramType": "DDR5", "ramSlots": 4, "maxRamGb": 128 } },
+  { "id": "mobo-b760p", "category": "motherboard", "name": "PRO B760-P WiFi DDR5", "brand": "MSI", "price": 140, "tier": 2, "specs": { "socket": "LGA1700", "formFactor": "ATX", "ramType": "DDR5", "ramSlots": 4, "maxRamGb": 192 } },
+  { "id": "mobo-b650", "category": "motherboard", "name": "B650 Gaming Plus WiFi", "brand": "MSI", "price": 170, "tier": 3, "specs": { "socket": "AM5", "formFactor": "ATX", "ramType": "DDR5", "ramSlots": 4, "maxRamGb": 192 } },
+  { "id": "mobo-b650i", "category": "motherboard", "name": "B650I Lightning WiFi", "brand": "ASRock", "price": 220, "tier": 3, "specs": { "socket": "AM5", "formFactor": "ITX", "ramType": "DDR5", "ramSlots": 2, "maxRamGb": 96 } },
+  { "id": "mobo-z790", "category": "motherboard", "name": "Z790 Gaming X AX", "brand": "Gigabyte", "price": 220, "tier": 4, "specs": { "socket": "LGA1700", "formFactor": "ATX", "ramType": "DDR5", "ramSlots": 4, "maxRamGb": 192 } },
+  { "id": "mobo-z890", "category": "motherboard", "name": "MAG Z890 Tomahawk WiFi", "brand": "MSI", "price": 260, "tier": 4, "specs": { "socket": "LGA1851", "formFactor": "ATX", "ramType": "DDR5", "ramSlots": 4, "maxRamGb": 256 } },
+  { "id": "mobo-x870e", "category": "motherboard", "name": "X870E Nova WiFi", "brand": "ASRock", "price": 300, "tier": 5, "specs": { "socket": "AM5", "formFactor": "ATX", "ramType": "DDR5", "ramSlots": 4, "maxRamGb": 256 } },
+
+  { "id": "ram-veng16d4", "category": "ram", "name": "Vengeance LPX 16GB (2x8) DDR4-3200", "brand": "Corsair", "price": 40, "tier": 1, "specs": { "type": "DDR4", "capacityGb": 16, "sticks": 2, "speedMhz": 3200, "rgb": false } },
+  { "id": "ram-fury32d5", "category": "ram", "name": "Fury Beast 32GB (2x16) DDR5-5200", "brand": "Kingston", "price": 85, "tier": 2, "specs": { "type": "DDR5", "capacityGb": 32, "sticks": 2, "speedMhz": 5200, "rgb": false } },
+  { "id": "ram-flare32", "category": "ram", "name": "Flare X5 32GB (2x16) DDR5-6000", "brand": "G.Skill", "price": 100, "tier": 3, "specs": { "type": "DDR5", "capacityGb": 32, "sticks": 2, "speedMhz": 6000, "rgb": false } },
+  { "id": "ram-vengrgb32", "category": "ram", "name": "Vengeance RGB 32GB (2x16) DDR5-6000", "brand": "Corsair", "price": 115, "tier": 3, "specs": { "type": "DDR5", "capacityGb": 32, "sticks": 2, "speedMhz": 6000, "rgb": true } },
+  { "id": "ram-trident64", "category": "ram", "name": "Trident Z5 Neo RGB 64GB (2x32) DDR5-6000", "brand": "G.Skill", "price": 210, "tier": 5, "specs": { "type": "DDR5", "capacityGb": 64, "sticks": 2, "speedMhz": 6000, "rgb": true } },
+
+  { "id": "gpu-b580", "category": "gpu", "name": "Arc B580 12GB", "brand": "Intel", "price": 250, "tier": 1, "specs": { "lengthMm": 272, "tdpW": 190, "vramGb": 12, "fanCount": 2, "rgb": false } },
+  { "id": "gpu-5060", "category": "gpu", "name": "GeForce RTX 5060 Ventus 2X", "brand": "MSI", "price": 300, "tier": 2, "specs": { "lengthMm": 235, "tdpW": 145, "vramGb": 8, "fanCount": 2, "rgb": false } },
+  { "id": "gpu-9060xt", "category": "gpu", "name": "Radeon RX 9060 XT Pulse 16GB", "brand": "Sapphire", "price": 360, "tier": 3, "specs": { "lengthMm": 270, "tdpW": 160, "vramGb": 16, "fanCount": 2, "rgb": false } },
+  { "id": "gpu-5070", "category": "gpu", "name": "GeForce RTX 5070 Gaming Trio", "brand": "MSI", "price": 550, "tier": 4, "specs": { "lengthMm": 290, "tdpW": 250, "vramGb": 12, "fanCount": 3, "rgb": true } },
+  { "id": "gpu-9070xt", "category": "gpu", "name": "Radeon RX 9070 XT Nitro+", "brand": "Sapphire", "price": 650, "tier": 5, "specs": { "lengthMm": 305, "tdpW": 330, "vramGb": 16, "fanCount": 3, "rgb": true } },
+  { "id": "gpu-5080", "category": "gpu", "name": "GeForce RTX 5080 TUF Gaming", "brand": "ASUS", "price": 1050, "tier": 5, "specs": { "lengthMm": 340, "tdpW": 360, "vramGb": 16, "fanCount": 3, "rgb": true } },
+
+  { "id": "sto-barracuda", "category": "storage", "name": "Barracuda 2TB 7200RPM", "brand": "Seagate", "price": 60, "tier": 1, "specs": { "type": "HDD", "capacityGb": 2000 } },
+  { "id": "sto-p3plus", "category": "storage", "name": "P3 Plus 1TB NVMe", "brand": "Crucial", "price": 65, "tier": 1, "specs": { "type": "NVMe", "capacityGb": 1000 } },
+  { "id": "sto-870evo", "category": "storage", "name": "870 EVO 1TB SATA", "brand": "Samsung", "price": 85, "tier": 1, "specs": { "type": "SATA SSD", "capacityGb": 1000 } },
+  { "id": "sto-sn7100", "category": "storage", "name": "Black SN7100 1TB NVMe", "brand": "Western Digital", "price": 80, "tier": 2, "specs": { "type": "NVMe", "capacityGb": 1000 } },
+  { "id": "sto-990pro", "category": "storage", "name": "990 Pro 2TB NVMe", "brand": "Samsung", "price": 170, "tier": 4, "specs": { "type": "NVMe", "capacityGb": 2000 } },
+  { "id": "sto-t705", "category": "storage", "name": "T705 2TB Gen5 NVMe", "brand": "Crucial", "price": 260, "tier": 5, "specs": { "type": "NVMe", "capacityGb": 2000 } },
+
+  { "id": "psu-smart600", "category": "psu", "name": "Smart 600W 80+", "brand": "Thermaltake", "price": 45, "tier": 1, "specs": { "wattage": 600, "efficiency": "80+", "modular": "no" } },
+  { "id": "psu-cx650", "category": "psu", "name": "CX650 80+ Bronze", "brand": "Corsair", "price": 60, "tier": 1, "specs": { "wattage": 650, "efficiency": "80+ Bronze", "modular": "no" } },
+  { "id": "psu-rm750e", "category": "psu", "name": "RM750e 80+ Gold", "brand": "Corsair", "price": 100, "tier": 3, "specs": { "wattage": 750, "efficiency": "80+ Gold", "modular": "full" } },
+  { "id": "psu-focus850", "category": "psu", "name": "Focus GX-850 80+ Gold", "brand": "Seasonic", "price": 140, "tier": 4, "specs": { "wattage": 850, "efficiency": "80+ Gold", "modular": "full" } },
+  { "id": "psu-rm1000x", "category": "psu", "name": "RM1000x 80+ Gold", "brand": "Corsair", "price": 190, "tier": 5, "specs": { "wattage": 1000, "efficiency": "80+ Gold", "modular": "full" } },
+
+  { "id": "case-x3", "category": "case", "name": "X3 Mesh", "brand": "Montech", "price": 60, "tier": 1, "specs": { "formFactors": ["ATX", "mATX", "ITX"], "maxGpuLengthMm": 335, "maxCoolerHeightMm": 165, "includedFans": 3, "rgb": true } },
+  { "id": "case-nr200", "category": "case", "name": "NR200P", "brand": "Cooler Master", "price": 100, "tier": 2, "specs": { "formFactors": ["ITX"], "maxGpuLengthMm": 330, "maxCoolerHeightMm": 155, "includedFans": 2, "rgb": false } },
+  { "id": "case-4000d", "category": "case", "name": "4000D Airflow", "brand": "Corsair", "price": 90, "tier": 3, "specs": { "formFactors": ["ATX", "mATX", "ITX"], "maxGpuLengthMm": 360, "maxCoolerHeightMm": 170, "includedFans": 2, "rgb": false } },
+  { "id": "case-h5flow", "category": "case", "name": "H5 Flow", "brand": "NZXT", "price": 95, "tier": 3, "specs": { "formFactors": ["ATX", "mATX", "ITX"], "maxGpuLengthMm": 365, "maxCoolerHeightMm": 165, "includedFans": 2, "rgb": false } },
+  { "id": "case-lancool216", "category": "case", "name": "Lancool 216", "brand": "Lian Li", "price": 100, "tier": 4, "specs": { "formFactors": ["ATX", "mATX", "ITX"], "maxGpuLengthMm": 392, "maxCoolerHeightMm": 180, "includedFans": 3, "rgb": true } },
+  { "id": "case-y60", "category": "case", "name": "Y60", "brand": "Hyte", "price": 180, "tier": 5, "specs": { "formFactors": ["ATX", "mATX", "ITX"], "maxGpuLengthMm": 375, "maxCoolerHeightMm": 160, "includedFans": 3, "rgb": true } }
+]
