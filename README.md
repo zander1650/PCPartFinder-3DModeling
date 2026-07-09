@@ -1,4 +1,4 @@
-# PCForge
+# PCZ
 
 Pick compatible PC parts, get budget-based recommended builds, and preview your
 finished PC **running in 3D** — spinning fans, RGB and all.
